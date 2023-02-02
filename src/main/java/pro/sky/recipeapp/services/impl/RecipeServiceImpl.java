@@ -118,13 +118,13 @@ public class RecipeServiceImpl implements RecipeService {
         }
     }
 
-    private void readFromFile() {
+    private void readFromFile() throws ExeptionWebApp {
         String json = filesService.readFromFile(recipesDataFileName);
         try {
             recipes = new ObjectMapper().readValue(json, new TypeReference<LinkedHashMap<Integer, Recipe>>() {
             });
         } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
+            throw new ExeptionWebApp("Ошибка чтения файла");
         }
     }
 
