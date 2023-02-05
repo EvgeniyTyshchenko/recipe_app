@@ -129,7 +129,7 @@ public class RecipeServiceImpl implements RecipeService {
     }
 
     @Override
-    public Path createReport() throws IOException {
+    public Path createReport() throws IOException, ExeptionWebApp {
         recipes.getOrDefault(id, null);
         Path path = filesService.createTempFile("Recipes");
         for (Recipe recipe : recipes.values()) {

@@ -2,6 +2,7 @@ package pro.sky.recipeapp.services.impl;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import pro.sky.recipeapp.exeptions.ExeptionWebApp;
 import pro.sky.recipeapp.services.FilesService;
 
 import java.io.File;
@@ -28,11 +29,11 @@ public class FilesServiceImpl implements FilesService {
     }
 
     @Override
-    public String readFromFile(String dataFileName) {
+    public String readFromFile(String dataFileName) throws ExeptionWebApp {
         try {
             return Files.readString(Path.of(dataFilePath, dataFileName));
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new ExeptionWebApp("Ошибка чтения файла!");
         }
     }
 
@@ -55,11 +56,11 @@ public class FilesServiceImpl implements FilesService {
     }
 
     @Override
-    public Path createTempFile(String suffix) {
+    public Path createTempFile(String suffix) throws ExeptionWebApp {
         try {
             return Files.createTempFile(Path.of(dataFilePath), "tempFile", suffix);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new ExeptionWebApp("Ошибка создания временного файла!");
         }
     }
 }

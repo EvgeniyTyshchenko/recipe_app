@@ -24,5 +24,5 @@ public interface RecipeService {
 
     List<Recipe> findRecipeByIngredientId(int id);
 
-    Path createReport() throws IOException;
+    Path createReport() throws IOException, ExeptionWebApp;
 }

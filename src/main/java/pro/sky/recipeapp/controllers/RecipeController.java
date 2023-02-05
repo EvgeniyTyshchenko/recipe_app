@@ -200,7 +200,7 @@ public class RecipeController {
             }
     )
     @GetMapping(value = "/report")
-    public ResponseEntity<Object> downloadRecipe() {
+    public ResponseEntity<Object> downloadRecipe() throws ExeptionWebApp {
         try {
             Path path = recipeService.createReport();
             if (Files.size(path) == 0) {
