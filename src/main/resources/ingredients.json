@@ -1,0 +1,57 @@
+{
+  "0": {
+    "title": "Творог",
+    "quantity": 450,
+    "unitsOfMeasurement": "г"
+  },
+  "1": {
+    "title": "Куриное яйцо",
+    "quantity": 2,
+    "unitsOfMeasurement": "шт."
+  },
+  "2": {
+    "title": "Пшеничная мука",
+    "quantity": 6,
+    "unitsOfMeasurement": "ст. ложек"
+  },
+  "3": {
+    "title": "Сахар",
+    "quantity": 2,
+    "unitsOfMeasurement": "ст. ложек"
+  },
+  "4": {
+    "title": "Помидоры",
+    "quantity": 3,
+    "unitsOfMeasurement": "шт."
+  },
+  "5": {
+    "title": "Королевские креветки",
+    "quantity": 300,
+    "unitsOfMeasurement": "г"
+  },
+  "6": {
+    "title": "Зеленый салат",
+    "quantity": 1,
+    "unitsOfMeasurement": "пучок"
+  },
+  "7": {
+    "title": "Огурцы",
+    "quantity": 2,
+    "unitsOfMeasurement": "шт."
+  },
+  "8": {
+    "title": "Специи",
+    "quantity": 0,
+    "unitsOfMeasurement": "по вкусу"
+  },
+  "9": {
+    "title": "Майонез",
+    "quantity": 0,
+    "unitsOfMeasurement": "по вкусу"
+  },
+  "10": {
+    "title": "Кунжутные семечки",
+    "quantity": 3,
+    "unitsOfMeasurement": "ст. ложки"
+  }
+}
